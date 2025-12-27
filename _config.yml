@@ -1,2 +1,7 @@
 include:
   - _astro
+  - __nuxt_content
+  - __og-image__/static
+  - _i18n/y_PkuXgL
+  - _ipx/_
+  - _nuxt
