@@ -9,3 +9,4 @@ include:
   - _ipx/_
   - _nuxt
   - _payload.json
+  - _ipx/*
