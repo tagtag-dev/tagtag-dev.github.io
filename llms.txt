@@ -1,0 +1,42 @@
+# Tagtag Documentation
+
+> Documentation for Tagtag - A modular, enterprise-grade Java Spring Boot admin framework.
+
+## Documentation Sets
+
+- [Tagtag - Full Documentation](https://tagtag.cn/llms-full.txt): The complete documentation for Tagtag framework.
+
+## Getting Started
+
+- [项目介绍](https://tagtag.cn/getting-started/introduction): Tagtag Starter 后台管理框架的详细介绍。
+- [快速上手](https://tagtag.cn/getting-started/quick-start): 在几分钟内搭建并运行 Tagtag Starter。
+
+## Architecture
+
+- [架构概览](https://tagtag.cn/architecture/overview): Tagtag Starter 架构的高层概览。
+- [项目结构](https://tagtag.cn/architecture/project-structure): Tagtag Starter 仓库的详细文件结构。
+- [前端架构](https://tagtag.cn/architecture/frontend-architecture): Tagtag Starter 前端架构的详细介绍。
+
+## Developer Guide
+
+- [实战教程：开发 CRUD 功能](https://tagtag.cn/developer-guide/crud-tutorial): 从零开始开发一个完整的增删改查功能模块。
+- [代码规范与最佳实践](https://tagtag.cn/developer-guide/code-style): Tagtag Starter 项目的代码规范和最佳实践指南。
+- [测试指南](https://tagtag.cn/developer-guide/testing): Tagtag Starter 项目的测试指南，包括单元测试、集成测试和 API 测试。
+- [前端开发指南](https://tagtag.cn/developer-guide/frontend-development): Tagtag Starter 前端开发指南，包括组件开发规范、Hooks 使用指南和最佳实践。
+- [AI 辅助开发](https://tagtag.cn/developer-guide/ai-development): 使用 AI 和 MCP 提升 Tagtag Starter 开发效率
+
+## Modules
+
+- [身份管理 (IAM)](https://tagtag.cn/modules/iam): 身份与访问管理模块文档。
+- [系统模块](https://tagtag.cn/modules/system): Tagtag Starter 系统模块文档，包括系统配置、字典管理和日志管理等功能。
+- [认证模块](https://tagtag.cn/modules/auth): 认证与授权模块文档，详细说明JWT认证流程。
+- [存储模块](https://tagtag.cn/modules/storage): 文件存储模块文档，详细说明存储实现、支持的存储模式和核心功能。
+
+## Deployment
+
+- [生产环境部署](https://tagtag.cn/deployment/production): Tagtag Starter 生产环境部署指南，包括服务器配置、数据库优化和安全配置。
+- [容器化部署](https://tagtag.cn/deployment/containerization): Tagtag Starter 容器化部署指南，包括 Docker 和 Kubernetes 部署方案。
+
+## Maintenance
+
+- [监控与维护](https://tagtag.cn/maintenance/monitoring): Tagtag Starter 监控与维护指南，包括日志管理和系统监控方案。
