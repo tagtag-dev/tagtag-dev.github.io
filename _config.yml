@@ -5,3 +5,5 @@ include:
   - _i18n/y_PkuXgL
   - _ipx/_
   - _nuxt
+  - _payload.json
+  -
