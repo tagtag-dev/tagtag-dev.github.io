@@ -2,7 +2,7 @@
 
 Tagtag Starter 是一个基于 Java 和 Spring Boot 3 构建的通用、模块化后台管理框架。它旨在为构建商业应用提供一个轻量、坚实的基础，帮助开发者快速搭建高质量的后台管理系统。
 
-![Tagtag Starter - Analytics](https://tagtag.cn/images/docs/1.getting-started/analytics.png)
+![Tagtag Starter - Analytics](https://tagtag.dev/images/docs/1.getting-started/analytics.png)
 
 Tagtag Starter 的定位非常明确：**做最适合新项目的起步脚手架**。我们不追求大而全的复杂功能，而是专注于提供一个**功能简洁、上手简单**的开发底座，让开发者能够专注于业务逻辑的实现，而不是和配置文件斗智斗勇。
 
@@ -68,11 +68,11 @@ Tagtag 不适合以下类型的项目：
 
 ## 快速开始
 
-想要快速上手 Tagtag Starter？请查看我们的 [快速开始指南](https://tagtag.cn/getting-started/quick-start)，您可以在几分钟内跑通整个项目。相信我，比煮一碗泡面还快。
+想要快速上手 Tagtag Starter？请查看我们的 [快速开始指南](https://tagtag.dev/getting-started/quick-start)，您可以在几分钟内跑通整个项目。相信我，比煮一碗泡面还快。
 
 ## 架构设计
 
-Tagtag 采用前后端分离的架构设计，后端基于 Java 和 Spring Boot 3 构建，前端基于 Vue 3 + TypeScript + Vite 构建。想要了解更多关于 Tagtag 的架构设计，请查看我们的 [架构文档](https://tagtag.cn/architecture/overview)。我们的架构设计就像搭积木一样清晰，保证你看完就能懂。
+Tagtag 采用前后端分离的架构设计，后端基于 Java 和 Spring Boot 3 构建，前端基于 Vue 3 + TypeScript + Vite 构建。想要了解更多关于 Tagtag 的架构设计，请查看我们的 [架构文档](https://tagtag.dev/architecture/overview)。我们的架构设计就像搭积木一样清晰，保证你看完就能懂。
 
 ## 社区与贡献
 
@@ -7039,7 +7039,7 @@ Tagtag Starter 框架通过以下方式支持 AI 辅助开发：
 
 IAM 模块基于 &#x2A;*RBAC (Role-Based Access Control)** 模型设计，实现了细粒度的权限控制。
 
-![Tagtag Starter - profile](https://tagtag.cn/images/docs/profile.png)
+![Tagtag Starter - profile](https://tagtag.dev/images/docs/profile.png)
 
 ### 1.1 RBAC 模型概述
 
@@ -7178,7 +7178,7 @@ Tagtag Starter 的 RBAC 模型支持两种类型的权限：
 
 **功能**: 用户的增删改查、密码重置、状态变更、角色分配。
 
-![Tagtag Starter - user](https://tagtag.cn/images/docs/user.png)
+![Tagtag Starter - user](https://tagtag.dev/images/docs/user.png)
 
 **实现细节**:
 
@@ -7191,7 +7191,7 @@ Tagtag Starter 的 RBAC 模型支持两种类型的权限：
 
 **功能**: 角色的创建与维护、权限分配、数据权限配置。
 
-![Tagtag Starter - role](https://tagtag.cn/images/docs/role.png)
+![Tagtag Starter - role](https://tagtag.dev/images/docs/role.png)
 
 **实现细节**:
 
@@ -7203,7 +7203,7 @@ Tagtag Starter 的 RBAC 模型支持两种类型的权限：
 
 **功能**: 可视化管理系统的菜单结构、配置菜单属性、定义按钮权限。
 
-![Tagtag Starter - menu](https://tagtag.cn/images/docs/menu.png)
+![Tagtag Starter - menu](https://tagtag.dev/images/docs/menu.png)
 
 **实现细节**:
 
@@ -7216,7 +7216,7 @@ Tagtag Starter 的 RBAC 模型支持两种类型的权限：
 
 **功能**: 维护企业的组织架构树。
 
-![Tagtag Starter - dept](https://tagtag.cn/images/docs/dept.png)
+![Tagtag Starter - dept](https://tagtag.dev/images/docs/dept.png)
 
 **实现细节**:
 
