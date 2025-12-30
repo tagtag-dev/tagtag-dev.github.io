@@ -78,8 +78,8 @@ Tagtag 采用前后端分离的架构设计，后端基于 Java 和 Spring Boot 
 
 Tagtag 是一个开源项目，我们欢迎社区的贡献和反馈。如果您有任何问题或建议，欢迎在 GitHub 上提交 Issue 或 Pull Request。我们承诺，每一个 Issue 都会认真对待，每一个 PR 都会仔细 review。
 
-- **GitHub 仓库**：<https://github.com/tagtag-dev/tagtag-starter>{rel="nofollow"}
-- **文档地址**：<https://tagtag.dev>{rel="nofollow"}
+- **GitHub 仓库**：<https://github.com/tagtag-dev/tagtag-starter>{rel="&#x22;nofollow&#x22;"}
+- **文档地址**：<https://tagtag.dev>{rel="&#x22;nofollow&#x22;"}
 
 ---
 
@@ -200,20 +200,19 @@ java -jar tagtag-start/target/tagtag-start-0.0.1-SNAPSHOT.jar
 这一步可能需要一点时间，毕竟要下载那么多依赖包。耐心等待，别急，好饭不怕晚。
 
 3. 启动开发服务器：
-
    ```bash
    pnpm run dev
    ```
 
-看到类似 "Local: <http://localhost:5666/>{rel="nofollow"}" 的信息，就说明前端也启动成功了。太棒了，前后端都跑起来了！
+看到类似 "Local: <http://localhost:5666/>{rel="&#x22;nofollow&#x22;"}" 的信息，就说明前端也启动成功了。太棒了，前后端都跑起来了！
 
 ## 验证
 
 启动成功后，您可以访问以下地址来验证系统是否正常运行：
 
-- **前端应用**: 访问 <http://localhost:5666>{rel="nofollow"} - 登录界面，用 admin/admin123 登录试试
-- **后端 API 文档**: 访问 <http://localhost:8080/index.html>{rel="nofollow"} (Scalar) - 看看系统提供了哪些 API 接口
-- **健康检查**: 访问 <http://localhost:8080/actuator/health>{rel="nofollow"} - 检查后端服务是否健康
+- **前端应用**: 访问 <http://localhost:5666>{rel="&#x22;nofollow&#x22;"} - 登录界面，用 admin/admin123 登录试试
+- **后端 API 文档**: 访问 <http://localhost:8080/index.html>{rel="&#x22;nofollow&#x22;"} (Scalar) - 看看系统提供了哪些 API 接口
+- **健康检查**: 访问 <http://localhost:8080/actuator/health>{rel="&#x22;nofollow&#x22;"} - 检查后端服务是否健康
 
 如果这些地址都能正常访问，恭喜您，您已经成功搭建了 Tagtag Starter 系统！给自己鼓个掌吧！
 
@@ -371,15 +370,12 @@ Tagtag Starter 系统由以下两个主要部分组成：
 ### 前后端交互流程
 
 1. **用户认证流程**：
-
    - 用户访问前端应用，输入用户名和密码
    - 前端调用登录 API，发送认证请求
    - 后端验证用户名和密码，生成 JWT 令牌
    - 前端存储 JWT 令牌，后续请求携带令牌
-
    :br这个过程就像去银行取钱，先验证身份，拿到凭证，然后就可以凭凭证办理业务了。
 2. **API 请求流程**：
-
    - 前端发起 API 请求，携带 JWT 令牌
    - 后端过滤器验证令牌有效性
    - 控制器接收请求，调用服务层处理业务逻辑
@@ -387,14 +383,11 @@ Tagtag Starter 系统由以下两个主要部分组成：
    - 数据层返回结果，服务层封装业务响应
    - 控制器返回 JSON 响应给前端
    - 前端处理响应，更新界面
-
    :br这个流程就像点外卖，您下单（前端请求），商家接单（控制器），厨师做饭（服务层），打包（数据层），配送（返回响应），最后您收到外卖（前端处理）。
 3. **WebSocket 实时通信**（可选）：
-
    - 前端建立 WebSocket 连接，携带认证信息
    - 后端验证并建立连接
    - 双方通过 WebSocket 进行实时数据交换
-
    :br这就像打电话，建立连接后，双方可以随时说话，不用每次都重新拨号。
 
 ### 技术选型理由
@@ -482,7 +475,6 @@ Tagtag Starter 后端遵循严格的多模块架构，以分离基础设施、�
 - MyBatis Plus 配置与扩展
 - Redis 配置与工具类
 - Spring Security & JWT 认证机制
-
   - JWT 服务与策略
   - 权限守卫
   - 认证上下文管理
@@ -592,14 +584,12 @@ Tagtag Starter 前端采用现代化的 Monorepo 结构，基于 **Vben Admin 5*
 包含具体的应用实现，每个子目录对应一个独立的前端应用。
 
 - **`apps/tagtag`**: 主应用程序，包含完整的业务逻辑和界面。
-
   - `src/api`: API 请求定义和封装。
   - `src/views`: 页面视图组件。
   - `src/router`: 路由配置和守卫。
   - `src/store`: Pinia 状态管理。
   - `src/layouts`: 布局组件。
   - `src/components`: 业务组件。
-
   :br这一层就像具体的业务部门，负责实现具体的业务功能。
 
 #### 2. 核心包层 (`packages`)
@@ -607,24 +597,18 @@ Tagtag Starter 前端采用现代化的 Monorepo 结构，基于 **Vben Admin 5*
 提供可复用的核心功能和组件，供应用层使用。
 
 - **`packages/@core`**: 核心共享库。
-
   - **`base`**: 基础设计系统、图标和共享工具。
   - **`ui-kit`**: 封装的 UI 组件库。
-
-
     - `shadcn-ui`: 基于 Shadcn UI 的基础组件。
     - `form-ui`: 表单组件封装。
     - `layout-ui`: 布局组件封装。
     - `popup-ui`: 弹窗、抽屉等组件封装。
   - **`effects`**: 业务副作用与逻辑封装。
-
-
     - `access`: 权限控制逻辑。
     - `hooks`: 通用 Hooks (如 `useTabs`, `useRefresh`)。
     - `request`: 请求库封装。
     - `plugins`: 第三方插件集成 (Echarts, Motion, Vxe-table)。
   - **`preferences`**: 应用偏好设置管理。
-
   :br这一层就像公共设施，各个业务部门都可以使用，提高代码复用率。
 
 #### 3. 内部工具层 (`internal`)
@@ -759,8 +743,6 @@ tagtag-starter
 - `mapstruct/`: MapStruct 配置
 - `mybatis/`: MyBatis Plus 配置和字段自动填充
 - `security/`: Spring Security 配置和 JWT 实现
-
-
   - `config/`: JWT 认证配置
   - `context/`: 认证上下文管理
   - `filter/`: 自定义过滤器
@@ -772,8 +754,6 @@ tagtag-starter
   - `util/`: JWT 工具类
 - `util/`: 工具类（PageResults, Pages, WebUtil）
 - `web/`: 全局异常处理、CORS 配置、TraceId 过滤器
-
-
   - `exception/`: 各种异常处理器
   - `CorsConfig.java`: CORS 配置
   - `FilterConfig.java`: 过滤器配置
@@ -913,19 +893,13 @@ Monorepo 是一种将多个项目代码存储在单个仓库中的软件架构�
 **核心组件**：
 
 - `src/api/`: API 请求定义和封装
-
-
   - `core/`: 核心 API（认证、用户、菜单）
   - `modules/`: 模块 API（IAM、系统、存储）
 - `src/views/`: 页面视图组件
-
-
   - `_core/`: 核心页面（登录、个人中心、404 等）
   - `dashboard/`: 仪表盘页面
   - `modules/`: 模块页面（IAM、系统、存储）
 - `src/router/`: 路由配置
-
-
   - `routes/`: 路由定义
   - `access.ts`: 路由守卫
   - `guard.ts`: 权限守卫
@@ -943,14 +917,10 @@ Monorepo 是一种将多个项目代码存储在单个仓库中的软件架构�
 **子模块**：
 
 - **`base`**: 基础设计系统、图标和共享工具
-
-
   - `design/`: 设计系统和设计令牌
   - `icons/`: 图标库
   - `shared/`: 共享工具类
 - **`ui-kit`**: 封装的 UI 组件库
-
-
   - `shadcn-ui`: 基于 Shadcn UI 的基础组件
   - `form-ui`: 表单组件封装
   - `layout-ui`: 布局组件封装
@@ -958,8 +928,6 @@ Monorepo 是一种将多个项目代码存储在单个仓库中的软件架构�
   - `tabs-ui`: 标签页组件封装
   - `menu-ui`: 菜单组件封装
 - **`effects`**: 业务副作用与逻辑封装
-
-
   - `access`: 权限控制逻辑
   - `hooks`: 通用 Hooks（useTabs, useRefresh, usePagination）
   - `request`: 请求库封装
@@ -1094,12 +1062,10 @@ VITE_APP_SHORT_NAME=Tagtag
 ### 后端扩展
 
 1. **添加新模块**：
-
    - 在 `tagtag-contract` 下创建新的契约模块
    - 在 `tagtag-module` 下创建对应的实现模块
    - 在 `tagtag-start` 中添加依赖
 2. **集成新功能**：
-
    - 在 `tagtag-framework` 中集成新的基础设施
    - 在 `tagtag-kernel` 中添加对应的支持
    - 在 `tagtag-contract` 中定义 API 契约
@@ -1108,16 +1074,13 @@ VITE_APP_SHORT_NAME=Tagtag
 ### 前端扩展
 
 1. **添加新组件**：
-
    - 在 `packages/@core/ui-kit` 中添加新组件
    - 在应用中导入使用
 2. **添加新页面**：
-
    - 在 `apps/tagtag/src/views` 中添加新页面
    - 在 `apps/tagtag/src/router` 中配置路由
    - 在 `apps/tagtag/src/api` 中添加 API 定义
 3. **添加新功能**：
-
    - 在 `packages/effects` 中添加新的副作用逻辑
    - 在 `packages/@core/hooks` 中添加新的 Hooks
    - 在应用中使用新功能
@@ -1231,30 +1194,24 @@ frontend
 **核心组件**：
 
 - `src/api/`: API 请求定义和封装
-
   - `core/`: 核心 API（认证、用户、菜单）
   - `modules/`: 模块 API（IAM、系统、存储）
   - `request.ts`: Axios 实例配置
 - `src/views/`: 页面视图组件
-
   - `_core/`: 核心页面（登录、个人中心、404 等）
   - `dashboard/`: 仪表盘页面
   - `modules/`: 模块页面（IAM、系统、存储）
 - `src/router/`: 路由配置
-
   - `routes/`: 路由定义
   - `access.ts`: 路由守卫
   - `guard.ts`: 权限守卫
 - `src/store/`: Pinia 状态管理
-
   - `auth.ts`: 认证状态管理
 - `src/layouts/`: 布局组件
-
   - `auth.vue`: 认证布局
   - `basic.vue`: 基础布局
 - `src/components/`: 业务组件
 - `src/locales/`: 国际化配置
-
   - `langs/`: 语言包
 
 ### 5.2 核心包层 (`packages`)
@@ -1268,25 +1225,21 @@ frontend
 **子模块**：
 
 - **`base`**: 基础设计系统、图标和共享工具
-
   - `design/`: 设计系统和设计令牌
   - `icons/`: 图标库
   - `shared/`: 共享工具类
   - `typings/`: 类型定义
 - **`composables`**: 通用组合式函数
-
   - `use-is-mobile.ts`: 移动端检测
   - `use-layout-style.ts`: 布局样式管理
   - `use-namespace.ts`: 命名空间管理
   - `use-scroll-lock.ts`: 滚动锁定管理
   - `use-sortable.ts`: 排序功能
 - **`preferences`**: 应用偏好设置管理
-
   - 主题设置
   - 布局设置
   - 其他用户偏好
 - **`ui-kit`**: 封装的 UI 组件库
-
   - `shadcn-ui`: 基于 Shadcn UI 的基础组件
   - `form-ui`: 表单组件封装
   - `layout-ui`: 布局组件封装
@@ -1302,17 +1255,14 @@ frontend
 #### 5.2.3 业务副作用与逻辑封装 (`packages/effects`)
 
 - **`access`**: 权限控制逻辑
-
   - 权限指令
   - 权限组件
   - 权限管理
 - **`common-ui`**: 通用 UI 组件
-
   - 关于页面
   - fallback 页面
   - 个人中心组件
 - **`hooks`**: 通用 Hooks
-
   - `use-app-config.ts`: 应用配置管理
   - `use-content-maximize.ts`: 内容最大化管理
   - `use-design-tokens.ts`: 设计令牌管理
@@ -1322,12 +1272,10 @@ frontend
   - `use-tabs.ts`: 标签页管理
   - `use-watermark.ts`: 水印功能
 - **`layouts`**: 布局组件
-
   - 基础布局
   - 认证布局
   - iframe 布局
 - **`plugins`**: 第三方插件集成
-
   - `echarts`: ECharts 图表集成
   - `motion`: 动画集成
   - `vxe-table`: 表格集成
@@ -1342,16 +1290,12 @@ frontend
 - `node-utils/`: Node.js 工具函数
 - `tailwind-config/`: Tailwind CSS 配置封装
 - `tsconfig/`: TypeScript 配置文件
-
-
   - `base.json`: 基础 TypeScript 配置
   - `library.json`: 库 TypeScript 配置
   - `node.json`: Node.js TypeScript 配置
   - `web-app.json`: Web 应用 TypeScript 配置
   - `web.json`: Web TypeScript 配置
 - `vite-config/`: Vite 构建配置封装
-
-
   - 应用配置
   - 库配置
   - 插件配置
@@ -2661,7 +2605,6 @@ describe('PostIndex Component', () => {
 ### 开发流程回顾
 
 1. **后端开发**：
-
    - 数据库设计
    - 定义契约（DTO、Query）
    - 持久层实现（Entity、Mapper）
@@ -2669,14 +2612,12 @@ describe('PostIndex Component', () => {
    - 控制层实现（Controller）
    - 编写单元测试
 2. **前端开发**：
-
    - 定义 API 请求
    - 创建列表页面
    - 创建表单弹窗组件
    - 配置菜单
    - 编写 API 测试和组件测试
 3. **部署和验证**：
-
    - 启动前后端服务
    - 登录系统验证功能
    - 执行测试用例
@@ -2767,8 +2708,6 @@ private static final Integer STATUS_ACTIVE = 1;
 - **空行**：在方法之间、代码块之间添加适当的空行
 - **括号**：左括号 `{` 与语句同一行，右括号 `}` 单独一行
 - **空格**：
-
-
   - 运算符前后添加空格，例如 `a = b + c`
   - 逗号、分号后添加空格，例如 `method(a, b, c)`
   - 括号内不添加空格，例如 `method(a, b)` 而非 `method( a, b )`
@@ -2855,7 +2794,6 @@ private static final Integer STATUS_ACTIVE = 1;
   }
   ```
 - **遵循 SOLID 原则**：
-
   - 单一职责原则：一个类只负责一个功能
   - 开放封闭原则：对扩展开放，对修改封闭
   - 里氏替换原则：子类可以替换父类
@@ -3051,8 +2989,6 @@ interface PostQuery {
 - **空行**：在函数之间、代码块之间添加适当的空行
 - **括号**：左括号 `{` 与语句同一行，右括号 `}` 单独一行
 - **空格**：
-
-
   - 运算符前后添加空格，例如 `a = b + c`
   - 逗号、分号后添加空格，例如 `method(a, b, c)`
   - 括号内不添加空格，例如 `method(a, b)` 而非 `method( a, b )`
@@ -3521,35 +3457,28 @@ const STATUS_INACTIVE = 0;
 ### 5.2 审查流程
 
 1. **提交代码前**：
-
    - 运行本地测试，确保所有测试通过
    - 运行代码格式化工具，例如 Prettier
    - 运行静态代码分析工具，例如 ESLint、SonarQube
 2. **提交代码后**：
-
    - 创建 Pull Request (PR)
    - 指定至少一位 reviewer
    - 填写清晰的 PR 描述，包括功能、修改内容、测试情况等
 3. **Reviewer 审查**：
-
    - 检查代码是否符合规范
    - 提出修改建议
    - 批准或拒绝 PR
 4. **修改代码**：
-
    - 根据 reviewer 的建议修改代码
    - 重新运行测试和代码分析
    - 提交修改
 5. **合并代码**：
-
    - 所有 reviewer 批准后，合并 PR
    - 删除临时分支
 
 ### 5.3 审查标准
 
 - **必须修复的问题**：
-
-
   - 语法错误
   - 逻辑错误
   - 安全漏洞
@@ -3597,8 +3526,6 @@ div.innerHTML = DOMPurify.sanitize(userInput);
 ```
 
 - **建议修复的问题**：
-
-
   - 代码可读性问题
   - 命名不规范
   - 注释不足
@@ -4535,8 +4462,6 @@ describe('Memory Leak Prevention', () => {
 - **单一职责原则**：每个测试只测试一个功能点
 - **DRY 原则**：Don't Repeat Yourself，避免重复的测试代码
 - **FIRST 原则**：
-
-
   - Fast：测试执行要快
   - Independent：测试之间要独立
   - Repeatable：测试结果要可重复
@@ -4547,8 +4472,6 @@ describe('Memory Leak Prevention', () => {
 
 - **目标覆盖率**：核心功能的测试覆盖率应达到 80% 以上
 - **覆盖率指标**：
-
-
   - 行覆盖率：测试执行的代码行数占总代码行数的比例
   - 分支覆盖率：测试执行的分支占总分支数的比例
   - 函数覆盖率：测试执行的函数占总函数数的比例
@@ -5774,8 +5697,8 @@ Tagtag Starter 官方文档已经集成了 `nuxt-llms` 模块，自动生成 AI 
 
 访问地址：
 
-- <http://tagtag.dev/llms.txt>{rel="nofollow"}
-- <http://tagtag.dev/llms-full.txt>{rel="nofollow"}
+- <http://tagtag.dev/llms.txt>{rel="&#x22;nofollow&#x22;"}
+- <http://tagtag.dev/llms-full.txt>{rel="&#x22;nofollow&#x22;"}
 
 这些文档遵循 llms.txt 标准，可以被各种 AI 工具和 MCP 服务器直接读取和解析。
 
@@ -7021,14 +6944,14 @@ Tagtag Starter 框架通过以下方式支持 AI 辅助开发：
 
 ## 相关资源
 
-- [llms.txt 标准](https://llmstxt.org/){rel="nofollow"}
-- [MCP 官方文档](https://modelcontextprotocol.io/){rel="nofollow"}
-- [Tagtag 文档](http://tagtag.dev){rel="nofollow"}
-- [Trae AI](https://trae.ai){rel="nofollow"}
+- [llms.txt 标准](https://llmstxt.org/){rel="&#x22;nofollow&#x22;"}
+- [MCP 官方文档](https://modelcontextprotocol.io/){rel="&#x22;nofollow&#x22;"}
+- [Tagtag 文档](http://tagtag.dev){rel="&#x22;nofollow&#x22;"}
+- [Trae AI](https://trae.ai){rel="&#x22;nofollow&#x22;"}
 
 ---
 
-需要帮助？欢迎在 [GitHub Issues](https://github.com/tagtag-dev/tagtag-starter/issues){rel="nofollow"} 中提问。
+需要帮助？欢迎在 [GitHub Issues](https://github.com/tagtag-dev/tagtag-starter/issues){rel="&#x22;nofollow&#x22;"} 中提问。
 
 
 # 身份管理 (IAM)
